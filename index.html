@@ -3,11 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- my css -->
     <link rel="stylesheet" href="./styles/main.css">
+    <!-- my js -->
     <script src="./scripts/app.js" defer></script>
-    <title>Document</title>
+    <title>Quinlan Sparks</title>
 </head>
 <body>
-    
+    <!-- Navigation -->
+    <nav>
+
+    </nav>
+
+    <!-- Landing -->
+    <section id="landing" class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Quinlan Sparks</h1>
+            <p class="lead">Full-stack developer | Storyteller | Gender criminal</p>
+            <small class="landing-small">Hire me for your diversity metrics, keep me around 'cause I'm good at shit.</small>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <img id="dev-pic" src="./images/quin.jpg" alt="Only one picture of me exists">
+                </div>
+                <div class="col-8">Flattering words about a miscreant</div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Portfolio -->
+    <section id="projects">
+        <h3>Notable Projects</h3>
+        <div id="projects-container">
+            <a href="https://bitd-toolkit.herokuapp.com/">
+                <div id="bitd" class="project">
+                    <div class="img-overlay">
+                        <h3 class="project-title">Blades in the Dark Game Master's Toolkit</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="https://chetana-wayfarer.herokuapp.com/">
+                <div id="wayfarer" class="project">
+                    <div class="img-overlay">
+                        <h3 class="project-title">Wayfarer</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="http://be-kind-to-yourself.herokuapp.com/">
+                <div id="kind" class="project">
+                    <div class="img-overlay">
+                        <h3 class="project-title">Kind</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="https://qmsparks.github.io/backgammon/">
+                <div id="backgammon" class="project">
+                    <div class="img-overlay">
+                        <h3 class="project-title">Backgammon</h3>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h3>Skill Sample</h3>
+        <div id="skills-container">
+
+            <!-- JavaScript -->
+            <i class="fab fa-js-square"></i>
+            <!-- Python -->
+            <i class="fab fa-python"></i>
+            <!-- HTML5 -->
+            <i class="fab fa-html5"></i>
+            <!-- CSS3 -->
+            <i class="fab fa-css3"></i>
+            <!-- Sass  -->
+            <i class="fab fa-sass"></i>
+            <!-- Git  -->
+            <i class="fab fa-git"></i>
+            <!-- React -->
+            <i class="fab fa-react"></i>
+            <!-- NodeJS -->
+            <i class="fab fa-node-js"></i>
+        </div>
+    </section>
+
+    <!-- Contact & Resume -->
+    <footer>
+        <a id="resume" href="./resume.pdf" target="_blank">See Resume</a>
+        <div class="link-container">
+            <a href="https://www.linkedin.com/in/quinlansparks/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:q.m.sparks@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/qmsparks"><i class="fab fa-github"></i></a>
+        </div>
+        </footer>
 </body>
 </html>

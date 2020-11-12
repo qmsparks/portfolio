@@ -1,3 +1,122 @@
+/* ANCHOR general styling */
 body {
-    background-color: teal;
+    max-width: 100vw;
+    background-color: gainsboro;
+}
+
+h3 {
+    text-align: center;
+}
+
+/* ANCHOR landing */
+#landing {
+    height: 100vh;
+    /* Photo credit: @michaelcopley03 at unsplash.com */
+    background-image: url('../images/photo-1601205038495-deda8ea1c102.jpeg');
+    background-size: cover;
+    color: gainsboro;
+    margin-bottom: 0;
+}
+
+.landing-small {
+    position: absolute;
+    bottom: 0;
+    text-align: right;
+    margin: 10px;
+}
+
+/* ANCHOR about */
+#dev-pic {
+    width: inherit;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+.row .col-8 {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ANCHOR projects */
+#projects {
+    height: 100vh;
+}
+
+#projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    width: 45vw;
+    height: 45vh;
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+    margin: 10px 0;
+}
+
+.img-overlay {
+    background-color: rgba(0, 0, 0, .5);
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bitd {
+    background-image: url('../images/bitd.png');
+}
+
+#wayfarer {
+    background-image: url('../images/wayfarer.png');
+}
+
+#kind {
+    background-image: url('../images/kind.png');
+}
+
+#backgammon {
+    background-image: url('../images/backgammon.png');
+}
+
+
+/* ANCHOR skills */
+#skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 3rem;
+}
+
+/* ANCHOR FOOTER */
+footer {
+    background-color: black;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: gainsboro;
+}
+
+footer a {
+    color: gainsboro;
+}
+
+.link-container {
+    height: inherit;
+    font-size: 2rem;
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#resume {
+    margin-top: 10px;
+    font-weight: bold;
 }
