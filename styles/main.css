@@ -8,6 +8,10 @@ h3 {
     text-align: center;
 }
 
+ul {
+    list-style-type: none;
+}
+
 /* ANCHOR landing */
 #landing {
     height: 100vh;
@@ -50,7 +54,7 @@ h3 {
 }
 
 .project {
-    width: 45vw;
+    width: 40vw;
     height: 45vh;
     display: inline-block;
     background-position: center;
@@ -60,12 +64,29 @@ h3 {
     overflow: hidden;
 }
 
+.project-title {
+    position: absolute;
+    bottom: 25px;
+}
+
+.project-links {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
 .img-overlay {
     background-color: rgba(0, 0, 0, .5);
     height: inherit;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.img-overlay:hover {
+    background-color: rgba(255, 255, 255, .5);
 }
 
 #bitd {
