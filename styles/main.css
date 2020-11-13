@@ -56,6 +56,8 @@ h3 {
     background-position: center;
     background-size: cover;
     margin: 10px 0;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .img-overlay {
@@ -90,6 +92,7 @@ h3 {
     justify-content: space-around;
     align-items: center;
     font-size: 3rem;
+    margin-bottom: 5px;
 }
 
 /* ANCHOR FOOTER */
@@ -119,4 +122,24 @@ footer a {
 #resume {
     margin-top: 10px;
     font-weight: bold;
+}
+
+
+/* ANCHOR media queries */
+
+@media only screen and (max-width: 600px) {
+    #projects {
+        min-height: 100vh;
+        margin-bottom: 20px;
+        overflow: scroll;
+    }
+
+    #projects-container {
+        height: 100vh;
+        overflow: scroll;
+    }
+
+    .project {
+        width: 70vw;
+    }
 }
