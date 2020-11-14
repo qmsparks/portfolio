@@ -9,9 +9,12 @@ $('.project').hover(
 )
 
 const openMenu = function() {
+    window.setTimeout(function() {
+        $('.menu').toggleClass('show');
+    }, 1);
+    $('.menu a').toggleClass('clickable');
     $('.menu-overlay').toggleClass('bloom');
     $('.half-circle').toggleClass('open');
-    $('.menu').toggleClass('show');
 }
 
 $('.menu').on('click', openMenu);

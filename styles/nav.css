@@ -71,8 +71,11 @@
 }
 
 .menu.show a {
-    display: block;
     opacity: 1;
+}
+
+a.clickable {
+    display: block;
 }
 
 .menu.show a:nth-child(1) {
