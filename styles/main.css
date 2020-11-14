@@ -70,11 +70,24 @@ ul {
 }
 
 .project-links {
-    width: 75%;
-    display: flex;
-    justify-content: space-around;
-
+    display: block;
+    text-align: center;
 }
+
+/* .project-links.active {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+}
+
+.project-links.active li {
+    border: 2px solid blue;
+    width: 200px;
+    text-align: center;
+} */
 
 .img-overlay {
     background-color: rgba(0, 0, 0, .5);
@@ -87,6 +100,7 @@ ul {
 
 .img-overlay:hover {
     background-color: rgba(255, 255, 255, .5);
+    cursor: pointer;
 }
 
 #bitd {
@@ -112,7 +126,7 @@ ul {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    font-size: 3rem;
+    font-size: 5rem;
     margin-bottom: 5px;
 }
 
