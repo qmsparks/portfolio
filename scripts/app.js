@@ -14,4 +14,11 @@ const showNav = function() {
     $('a').toggleClass('show');
 }
 
-$('.menu').on('click', showNav);
+const openMenu = function() {
+    $('.menu-overlay').toggleClass('bloom');
+    $('.half-circle').toggleClass('open');
+    $('a').toggleClass('show');
+}
+
+// $('.menu').on('click', showNav);
+$('.menu').on('click', openMenu);
