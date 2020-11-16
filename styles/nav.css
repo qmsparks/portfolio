@@ -26,10 +26,6 @@
     transition: all .5s;
 }
 
-.menu:hover {
-    cursor: pointer;
-}
-
 .half-circle {
     position: absolute;
     z-index: -1;
