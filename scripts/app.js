@@ -1,20 +1,11 @@
-$('.project').hover(
-    function() {
-        const id = $(this).attr("id");
-        $(`ul.${id}`).addClass('active');
-    }, function() {
-        const id = $(this).attr("id");
-        $(`ul.${id}`).removeClass('active');
-    }
-)
-
-const openMenu = function() {
+const toggleMenu = function() {
     window.setTimeout(function() {
-        $('.menu').toggleClass('show');
+        $('.link-wrapper').toggleClass('show');
     }, 1);
-    $('.menu a').toggleClass('clickable');
+    $('.link-wrapper a').toggleClass('clickable');
     $('.menu-overlay').toggleClass('bloom');
-    $('.half-circle').toggleClass('open');
+    $('.half-circle').toggleClass('spin');
+    $('.fa-bars').toggleClass('bar-spin');
 }
 
-$('.menu').on('click', openMenu);
+$('.menu').on('click', toggleMenu);
