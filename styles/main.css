@@ -33,10 +33,9 @@ a:hover {
 /* ANCHOR landing */
 #landing {
     height: 100vh;
-    /* Photo credit: @michaelcopley03 at unsplash.com */
-    background-image: url('../images/photo-1601205038495-deda8ea1c102.jpeg');
+    /* Photo by @michaelcopley03 on unsplash.com https://unsplash.com/photos/5z_14T6F0bc?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink */
+    background-image: url('../images/background.jpg');
     background-size: cover;
-    background-position: center;
     color: var(--light-green);
     margin-bottom: 0;
 }
@@ -117,7 +116,6 @@ a:hover {
 
 .skill-icon {
     font-size: 5rem;
-    color: darkcyan;
 }
 
 .skill-name {
