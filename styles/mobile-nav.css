@@ -33,15 +33,12 @@ a.clickable {
     right: 20px;
 }
 
-.link-wrapper a:nth-child(1) {
-    transition-delay: 150ms;
-}
 .link-wrapper a:nth-child(2) {
-    transition-delay: 400ms;
+    transition-delay: 250ms;
 }
 .link-wrapper a:nth-child(3) {
-    transition-delay: 650ms;
+    transition-delay: 500ms;
 }
 .link-wrapper a:nth-child(4) {
-    transition-delay: 900ms;
+    transition-delay: 750ms;
 }
