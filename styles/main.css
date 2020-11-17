@@ -1,5 +1,6 @@
 :root {
-    --light-green: rgb(228, 252, 252);
+    /* --light-green: rgb(228, 252, 252); */
+    --light-green: rgb(197, 247, 247);
 }
 
 /* ANCHOR general styling */
@@ -40,12 +41,21 @@ a:hover {
     margin-bottom: 0;
 }
 
+.fa-sync-alt {
+    margin: 0 5px;
+    font-size: .9rem;
+}
+
 /* ANCHOR about */
 .about-content {
     height: inherit;
     display: flex;
     align-items: center;
     padding: 0 10vw;
+}
+
+.about-text {
+    text-align: center;
 }
 
 #dev-pic {

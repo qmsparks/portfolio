@@ -11,5 +11,20 @@ const toggleMenu = function() {
 $('.menu').on('click', toggleMenu);
 
 
-const flavorText = ["Battlebots enthusiast", "Gender hoarder", "Stack of goblins in a very nice coat", "Probably not a hairless raccoon", "Loud"]
-$('#rule-of-three').text(flavorText[Math.floor(Math.random() * flavorText.length)]);
+const flavorText = ["Battlebots enthusiast", "Gender connoisseur", "Probably not a hairless raccoon", "Loud", "Decepticon apologist", "Meme sommelier", "Podcast snob", "Non-GMO goblin-alternative", "Dog hugger"]
+
+const shuffleFlavorText = function() {
+    if (flavorText.length === 0) {
+        $('.fa-sync-alt').css("display", "none");
+        $('#rule-of-three').text('Out of flavor text for you');
+    } else {
+        const randomIndex = Math.floor(Math.random() * flavorText.length);
+        const text = flavorText.splice(randomIndex, 1)[0];
+        $('#rule-of-three').text(text);
+
+    }
+}
+
+shuffleFlavorText();
+
+$('.fa-sync-alt').on('click', shuffleFlavorText);
