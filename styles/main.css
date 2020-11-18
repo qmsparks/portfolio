@@ -10,7 +10,8 @@ body {
 
 h3 {
     padding-top: 20px;
-    padding-left: 15px;
+    /* padding-left: 15px; */
+    margin-left: 10vw;
     position: absolute;
 }
 
@@ -33,11 +34,18 @@ a:hover {
 /* ANCHOR landing */
 #landing {
     height: 100vh;
-    /* Photo by @michaelcopley03 on unsplash.com https://unsplash.com/photos/5z_14T6F0bc?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink */
     background-image: url('../images/background.jpg');
     background-size: cover;
     color: var(--light-green);
     margin-bottom: 0;
+}
+
+.name {
+    margin-bottom: .1rem;
+}
+
+.lead {
+    margin-top: .2rem;
 }
 
 .fa-sync-alt {
@@ -58,7 +66,6 @@ a:hover {
 }
 
 .about-text {
-    text-align: center;
     margin-right: 5vw;
 }
 
@@ -97,7 +104,6 @@ a:hover {
     position: relative;
     height: inherit;
     width: 50%;
-    text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
