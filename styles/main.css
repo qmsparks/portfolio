@@ -26,9 +26,9 @@ a:hover {
     color: darkcyan;
 }
 
-/* .info-block {
-    height: 50vh;
-} */
+.info-block {
+    position: relative;
+}
 
 /* ANCHOR landing */
 #landing {
@@ -69,12 +69,12 @@ a:hover {
 }
 
 .about-text {
-    margin-right: 5vw;
+    margin-left: 5vw;
 }
 
 #dev-pic {
     border-radius: 50%;
-    max-width: 25vw;
+    max-width: 20vw;
 }
 
 
@@ -258,9 +258,20 @@ a:hover {
 }
 
 @media only screen and (max-width: 600px) {
-h3 {
-    padding-top: 2vh;
-}
+    h3 {
+        padding-top: 2vh;
+    }
+
+    .about-content {
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: relative;
+    }
+
+    .about-text {
+        font-size: .8rem;
+        margin-right: 0;
+    }
 
     #projects, #projectCarousel, .carousel-item {
         height: 100vh;
@@ -282,21 +293,25 @@ h3 {
         text-align: center;
     }
 
-    .about-text {
-        font-size: .9rem;
-        margin-right: 0;
-    }
-
-    #dev-pic {
-        display: none;
-    }
-
     #skills-container {
-        padding: 10vh 0;
+        padding: 4vh 0;
+        justify-content: space-around;
+    }
+
+    #frontend-skills, #backend-skills {
+        min-width: 65vw;
+    }
+
+    .link-container {
+        font-size: 1.5rem;
     }
 }
 
 @media only screen and (max-width: 330px) {
+    .about-text {
+        font-size: .7rem;
+    }
+
     .project-img {
         display: none;
     }
@@ -311,5 +326,17 @@ h3 {
 
     .project-links {
         bottom: -10vh;
+    }
+
+    .skill-icon {
+        font-size: 1.5rem;
+    }
+
+    .link-container {
+        font-size: 1rem;
+    }
+
+    #resume {
+        font-weight: normal;
     }
 }
