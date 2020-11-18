@@ -102,11 +102,11 @@ a.clickable {
 }
 
 .link-wrapper.show a:nth-child(1) {
-    transform: rotate(-90deg) translate(-175%, -15%);
+    transform: rotate(-90deg) translate(-155%, -15%);
 }
 
 .link-wrapper.show a:nth-child(2) {
-    transform: rotate(-90deg) translate(-195%, 120%);
+    transform: rotate(-90deg) translate(-175%, 120%);
 }
 
 .link-wrapper.show a:nth-child(3) {
