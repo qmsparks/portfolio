@@ -8,6 +8,10 @@ body {
     background-color: var(--light-green);
 }
 
+h1, h3 {
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+
 h3 {
     padding-top: 20px;
     margin-left: 10vw;
