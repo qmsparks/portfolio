@@ -1,12 +1,17 @@
 :root {
     --light-green: rgb(197, 247, 247);
+    --dark-green: rgb(3, 88, 88);
 }
 
 /* ANCHOR general styling */
 body {
+    position: relative;
     font-family: 'Montserrat', sans-serif;
-    max-width: 100vw;
-    background-color: var(--light-green);
+    height: 100vh;
+    overflow-y: scroll;
+    background-image: url('../images/background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 h1, h3 {
@@ -24,24 +29,35 @@ ul {
 }
 
 a {
-    color: var(--light-green);
-}
-
-a:hover {
     color: darkcyan;
 }
 
+a:hover {
+    color: var(--dark-green);
+}
+
 .info-block {
+    width: 100vw;
     position: relative;
+    background-color: var(--light-green);
+    z-index: 1;
+}
+
+.spacer {
+    width: 100vh;
+    height: 20vh;
 }
 
 /* ANCHOR landing */
 #landing {
     height: 100vh;
-    background-image: url('../images/background.jpg');
-    background-size: cover;
     color: var(--light-green);
-    margin-bottom: 0;
+}
+
+#landing .container {
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
 }
 
 .name {
@@ -55,10 +71,11 @@ a:hover {
 .fa-sync-alt {
     margin: 0 5px;
     font-size: .9rem;
+    color: darkcyan;
 }
 
 .fa-sync-alt:hover {
-    color: darkcyan;
+    color: var(--dark-green);
 }
 
 /* ANCHOR about */
@@ -86,8 +103,6 @@ a:hover {
 /* ANCHOR projects */
 #projects {
     height: 75vh;
-    background-color: black;
-    color: var(--light-green);
 }
 
 #projectCarousel {
@@ -186,162 +201,42 @@ a:hover {
 }
 
 /* ANCHOR contact */
+
 #contact {
     position: relative;
-    background-color: black;
-    height: 20vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 100vh;
     color: var(--light-green);
 }
 
 .contact-title {
-    align-self: flex-start;
-    top: 0;
+    font-size: 300%;
 }
 
 .link-container {
-    height: inherit;
+    position: absolute;
     font-size: 2rem;
-    width: 40%;
+    width: 17vw;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.legal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    left: 10vw;
+    top: 15vh;
 }
 
 #resume {
-    padding-bottom: 15px;
-    font-weight: bold;
+    position: absolute;
+    font-size: 2rem;
+    left: 10vw;
+    top: 45vh;
 }
 
-
-/* ANCHOR media queries */
-
-@media only screen and (max-width: 1100px) {
-    a {
-        color: darkcyan;
-    }
-
-    h3 {
-        padding-top: 5vh;
-        font-size: 1rem;
-    }
-
-    .carousel-content {
-        flex-direction: column;
-    }
-
-    .project-img {
-        max-height: 25%;
-        position: absolute;
-        top: 7vh;
-    }
-    .carousel-text {
-        width: 100%;
-        margin-top: 20%;
-    }
-
-    .project-title {
-        position: static;
-        font-size: 1rem;
-    }
-
-    .project-links {
-        bottom: 5vh;
-    }
-
-    .skill-icon {
-        font-size: 2rem;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    h3 {
-        padding-top: 2vh;
-    }
-
-    .about-content {
-        flex-direction: column;
-        justify-content: space-evenly;
-        position: relative;
-    }
-
-    .about-text {
-        font-size: .8rem;
-        margin-right: 0;
-    }
-
-    #projects, #projectCarousel, .carousel-item {
-        height: 100vh;
-    }
-
-    .project-img {
-        max-height: 15%;
-        border: none;
-    }
-
-    .carousel-text {
-        width: 95%;
-        font-size: 85%;
-        margin-top: 40vh;
-    }
-
-    .project-links {
-        bottom: -7vh;
-        text-align: center;
-    }
-
-    #skills-container {
-        padding: 4vh 0;
-        justify-content: space-around;
-    }
-
-    #frontend-skills, #backend-skills {
-        min-width: 65vw;
-    }
-
-    .link-container {
-        font-size: 1.5rem;
-    }
-}
-
-@media only screen and (max-width: 330px) {
-    .about-text {
-        font-size: .7rem;
-    }
-
-    .project-img {
-        display: none;
-    }
-
-    .project-title {
-        text-align: center;
-    }
-
-    .carousel-text {
-        margin-top: 20vh;
-    }
-
-    .project-links {
-        bottom: -10vh;
-    }
-
-    .skill-icon {
-        font-size: 1.5rem;
-    }
-
-    .link-container {
-        font-size: 1rem;
-    }
-
-    #resume {
-        font-weight: normal;
-    }
+/* ANCHOR copyright and image credit */
+.legal {
+    color: var(--light-green);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 2vw;
+    bottom: 1vh;
+    text-align: right;
+    z-index: 0;
 }

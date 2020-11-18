@@ -1,5 +1,5 @@
 .menu {
-    background-color: rgb(3, 88, 88);
+    background-color: var(--dark-green);
     position: fixed;
     display: flex;
     justify-content: center;
