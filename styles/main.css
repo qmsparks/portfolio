@@ -197,15 +197,19 @@ footer {
 
     h3 {
         padding-top: 5px;
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
     .carousel-text {
-        font-size: 90%;
+        width: 100%;
+        justify-content: center;
+        font-size: .7rem;
     }
 
     .project-title {
         top: 10px;
+        font-size: 1rem;
+        align-self: flex-end;
     }
     
     .project-links {
@@ -224,11 +228,6 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-    .carousel-text {
-        width: 100%;
-        justify-content: center;
-    }
-
     .about-text {
         font-size: .9rem;
         margin-right: 0;
