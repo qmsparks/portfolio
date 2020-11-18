@@ -1,5 +1,4 @@
 :root {
-    /* --light-green: rgb(228, 252, 252); */
     --light-green: rgb(197, 247, 247);
 }
 
@@ -46,6 +45,10 @@ a:hover {
     font-size: .9rem;
 }
 
+.fa-sync-alt:hover {
+    color: darkcyan;
+}
+
 /* ANCHOR about */
 .about-content {
     height: inherit;
@@ -56,6 +59,7 @@ a:hover {
 
 .about-text {
     text-align: center;
+    margin-right: 5vw;
 }
 
 #dev-pic {
@@ -78,6 +82,7 @@ a:hover {
 
 .carousel-content {
     height: inherit;
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 0 5vw;
@@ -89,35 +94,58 @@ a:hover {
 }
 
 .carousel-text {
+    position: relative;
     height: inherit;
     width: 50%;
     text-align: center;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+}
+
+.project-title {
+    position: absolute;
+    top: 30px;
 }
 
 .project-links {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 30px;
 }
 
 /* ANCHOR skills */
 #skills-container {
     height: inherit;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 5px;
     padding: 0 5vw;
 }
 
+.skill-row {
+    min-width: 45vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.skill-name {
+    text-align: center;
+}
+
 .skill-wrapper {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.skill-wrapper:hover .skill-icon {
+    transform: translateY(-15px);
 }
 
 .skill-wrapper:hover .skill-name {
@@ -129,6 +157,8 @@ a:hover {
 }
 
 .skill-name {
+    position: absolute;
+    bottom: -5px;
     display: none;
 }
 
@@ -167,11 +197,26 @@ footer {
 
     h3 {
         padding-top: 5px;
+        font-size: 1.3rem;
+    }
+
+    .carousel-text {
+        font-size: 90%;
+    }
+
+    .project-title {
+        top: 10px;
+    }
+    
+    .project-links {
+        bottom: 10px;
     }
 
     .project-img {
-        max-width: 45%;
+        display: none;
     }
+
+
 
     .skill-icon {
         font-size: 3rem;
@@ -184,7 +229,12 @@ footer {
         justify-content: center;
     }
 
-    .project-img {
+    .about-text {
+        font-size: .9rem;
+        margin-right: 0;
+    }
+
+    #dev-pic {
         display: none;
     }
 

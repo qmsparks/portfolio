@@ -54,14 +54,13 @@
         <h3>About Me</h3>
         <div class="about-content">
             <section class="about-text">
-                <p>I've worn a lot of hats in my life -- writer, actor, editor. Other people's dog's second-best friend. Wildly undertrained security. Disembodied voice tricking people into thinking they're smarter than they are. </p>
-                <p>I like the way full-stack developer fits better than all the rest.</p>
-                <p>Come to talk to me about what you want from your software, and let's figure out together what you need.</p>
+                <p>I've worn a lot of hats -- writer, actor, editor. Other people's dog's best friend (shh, it's a secret). Wildly undertrained security. Disembodied voice tricking people into thinking they're smarter than they are.</p>
+                <p>Full-stack developer fits better than all the rest combined.</p>
+                <p>Come talk to me about what you want from your software, and let's figure out together what you need.</p>
             </section>
             <img id="dev-pic" src="./images/quin.jpg" alt="">
         </div>
     </section>
-
 
     <!-- ANCHOR Portfolio -->
     <section id="projects" class="info-block">
@@ -72,8 +71,10 @@
                     <div class="carousel-content d-inline-flex">
                         <img src="./images/bitd.png" class="project-img" alt="...">
                         <div class="carousel-text d-flex">
-                            <h5>Blades in the Dark GM Toolkit</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias libero nemo nam voluptas, explicabo excepturi, in laborum doloribus quos quidem neque autem, blanditiis atque ipsum. Beatae inventore voluptatibus exercitationem asperiores.</p>
+                            <h5 class="project-title">Blades in the Dark GM Toolkit</h5>
+                            <p>My capstone project for General Assembly's Software Engineering Immersive -- a resource management tool for game masters running long campaigns of Blades in the Dark. The toolkit pulls random elements from a database to generate crucial world-building set-pieces, and allows users to save these tools to their account, with added notes.</p>
+                            <p>Initially built over 12 days, for purely selfish reasons, with clear goals for adding increased functionality. I cannot stress enough how selfish these reasons are. I'm tired of rolling a million dice during game prep.</p>
+                            <small>React front end | Express API | MongoDB</small>
                             <section class="project-links">
                                 <a href="https://bitd-toolkit.herokuapp.com/" target="_blank">See It Live</a>
                                 <a href="https://github.com/qmsparks/bitd-toolkit-client" target="_blank">React Repository</a>
@@ -85,34 +86,43 @@
                 <div class="carousel-item">
                     <div class="carousel-content d-inline-flex">
                         <div class="carousel-text  d-flex">
-                            <h5>Wayfarer</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda consectetur sequi cupiditate aspernatur, iusto maxime recusandae expedita at soluta distinctio doloribus repellat nobis mollitia magnam culpa eos sint deserunt provident.</p>
-                            <section class="project-links">
-                                <a href="https://chetana-wayfarer.herokuapp.com/" target="_blank">See It Live</a>
-                                <a href="https://github.com/khadkabinay/WAYFARER" target="_blank">Project Repository</a>
-                            </section>
-                        </div>
-                        <img src="./images/wayfarer.png" class="project-img" alt="...">
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-content d-inline-flex">
-                        <img src="./images/kind.png" class="project-img" alt="...">
-                        <div class="carousel-text  d-flex">
-                            <h5>Kind</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda consectetur sequi cupiditate aspernatur, iusto maxime recusandae expedita at soluta distinctio doloribus repellat nobis mollitia magnam culpa eos sint deserunt provident.</p>
+                            <h5 class="project-title">Kind</h5>
+                            <!-- TODO link to Jason's portfolio site once it's live -->
+                            <p>Perhaps my most ambitious project at General Assembly - and certainly the one poised to do the most good. Built in one week with my good friend Jason Harris, Kind is proof-of-concept of an application designed to remind its users to slow down and, as it were, be kind to themselves.</p>
+                            <p>Kind uses Cron and Twilio to send users positive affirmations at random intervals and routine reminders of small self-care tasks that are easy to lose track of. Actual usability is currenly severely limited, given the nature of Heroku's servers, but further functionality is coming soon.</p>
+                            <small>EJS | Express | MongoDB</small>
                             <section class="project-links">
                                 <a href="http://be-kind-to-yourself.herokuapp.com/" target="_blank">See It Live</a>
                                 <a href="https://github.com/qmsparks/be-kind" target="_blank">Project Repository</a>
                             </section>
                         </div>
+                        <img src="./images/kind.png" class="project-img" alt="...">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-content d-inline-flex">
+                        <img src="./images/wayfarer.png" class="project-img" alt="...">
+                        <div class="carousel-text  d-flex">
+                            <h5 class="project-title">Wayfarer</h5>
+                            <!-- TODO link to their portfolio sites once they're live -->
+                            <p>This was a client project, built over one week with two other developers - Binay Bishwakarma and Liz Kane. Wayfarer is a travel site, designed for users to be able to share stories and photos of their favorite cities. </p>
+                            <p>My focus was front end design, based on a provided color palette and wireframes, while providing back end support.</p>
+                            <small>Django | PostgreSQL</small>
+                            <section class="project-links">
+                                <a href="https://chetana-wayfarer.herokuapp.com/" target="_blank">See It Live</a>
+                                <a href="https://github.com/khadkabinay/WAYFARER" target="_blank">Project Repository</a>
+                            </section>
+                        </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="carousel-content d-inline-flex">
                         <div class="carousel-text  d-flex">
-                            <h5>Backgammon</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda consectetur sequi cupiditate aspernatur, iusto maxime recusandae expedita at soluta distinctio doloribus repellat nobis mollitia magnam culpa eos sint deserunt provident.</p>
+                            <h5 class="project-title">Backgammon</h5>
+                            <p>My very first project at General Assembly, thrown together in just four and a half days after two weeks of instruction on HTML, CSS, and JavaScript. Presented with the task of building a browser game in a very limited span of time, I succumbed to hubris and chose the rulesiest game my instructors let me.</p>
+                            <p>It's about as rough around the edges as you'd expect, given the timeframe and my experience level at the time -- but I'm very excited to refactor it now that I actually know what I'm doing it.</p>
+                            <p>Yes, I know some of the discs are on the wrong points. In my defense, I was completely unhinged at the time.</p>
+                            <small>HTML | Pure CSS | JavaScript | An absurdity of jQuery</small>
                             <section class="project-links">
                                 <a href="https://qmsparks.github.io/backgammon/" target="_blank">See It Live</a>
                                 <a href="https://github.com/qmsparks/backgammon" target="_blank">Project Repository</a>
@@ -137,75 +147,96 @@
     <section id="skills" class="info-block">
         <h3>Skill Sample</h3>
         <div id="skills-container">
-            <!-- JavaScript -->
-            <div class="skill-wrapper">
-                <i class="skill-icon devicon-javascript-plain"></i>
-                <small class="skill-name">JavaScript</small>
+
+            <div id="frontend-skills" class="row skill-row">
+                <!-- JavaScript -->
+                <div class="skill-wrapper">
+                    <i class="skill-icon devicon-javascript-plain"></i>
+                    <small class="skill-name">JavaScript</small>
+                </div>
+
+                <!-- HTML5 -->
+                <div class="skill-wrapper">    
+                    <i class="skill-icon devicon-html5-plain"></i>
+                    <small class="skill-name">HTML5</small>
+                </div>
+
+                <!-- CSS3 -->
+                <div class="skill-wrapper">
+                    <i class="skill-icon devicon-css3-plain"></i>
+                    <small class="skill-name">CSS3</small>
+                </div>
+
+                <!-- jQuery -->
+                <div class="skill-wrapper">
+                    <i class="skill-icon devicon-jquery-plain"></i>
+                    <small class="skill-name">jQuery</small>
+                </div>
+
+                <!-- Sass  -->
+                <div class="skill-wrapper">
+                    <i class="skill-icon devicon-sass-original"></i>
+                    <small class="skill-name">Sass</small>
+                </div>
+
+                <!-- React -->
+                <div class="skill-wrapper">
+                    <i class="skill-icon devicon-react-original"></i>
+                    <small class="skill-name">React</small>
+                </div>
+
             </div>
-            <!-- Python -->
-            <div class="skill-wrapper">
-                <i class="skill-icon devicon-python-plain"></i>
-                <small class="skill-name">Python</small>
+
+            <div id="general-skills" class="row skill-row">
+                <!-- Git  -->
+                <div class="skill-wrapper">
+                    <i class="skill-icon devicon-git-plain"></i>
+                    <small class="skill-name">Git</small>
+                </div>
+
+                <!-- Heroku -->
+                <div class="skill-wrapper">
+                    <i class="skill-icon devicon-heroku-original"></i>
+                    <small class="skill-name">Heroku</small>
+                </div>
             </div>
-            <!-- HTML5 -->
-            <div class="skill-wrapper">    
-                <i class="skill-icon devicon-html5-plain"></i>
-                <small class="skill-name">HTML5</small>
-            </div>
-            <!-- CSS3 -->
-            <div class="skill-wrapper">
-                <i class="skill-icon devicon-css3-plain"></i>
-                <small class="skill-name">CSS3</small>
-            </div>
-            <!-- jQuery -->
-            <div class="skill-wrapper">
-                <i class="skill-icon devicon-jquery-plain"></i>
-                <small class="skill-name">jQuery</small>
-            </div>
-            <!-- Sass  -->
-            <div class="skill-wrapper">
-                <i class="skill-icon devicon-sass-original"></i>
-                <small class="skill-name">Sass</small>
-            </div>
-            <!-- Git  -->
-            <div class="skill-wrapper">
-                <i class="skill-icon devicon-git-plain"></i>
-                <small class="skill-name">Git</small>
-            </div>
-            <!-- React -->
-            <div class="skill-wrapper">
-                <i class="skill-icon devicon-react-original"></i>
-                <small class="skill-name">React</small>
-            </div>
-            <!-- NodeJS -->
-            <div class="skill-wrapper">
-                <i class="skill-icon devicon-nodejs-plain"></i>
-                <small class="skill-name">NodeJS</small>
-            </div>
-            <!-- ExpressJS -->
-            <div class="skill-wrapper">
-                <i class="skill-icon devicon-express-original"></i>
-                <small class="skill-name">ExpressJS</small>
-            </div>
-            <!-- Django -->
-            <div class="skill-wrapper">
-                <i class="skill-icon devicon-django-plain"></i>
-                <small class="skill-name">Django</small>
-            </div>
-            <!-- MongoDB -->
-            <div class="skill-wrapper">
-                <i class="skill-icon devicon-mongodb-plain"></i>
-                <small class="skill-name">MongoDB</small>
-            </div>
-            <!-- PostgreSQL -->
-            <div class="skill-wrapper">
-                <i class="skill-icon devicon-postgresql-plain"></i>
-                <small class="skill-name">PostgreSQL</small>
-            </div>
-            <!-- Heroku -->
-            <div class="skill-wrapper">
-                <i class="skill-icon devicon-heroku-original"></i>
-                <small class="skill-name">Heroku</small>
+
+            <div id="backend-skills" class="row skill-row">
+                <!-- Python -->
+                <div class="skill-wrapper">
+                    <i class="skill-icon devicon-python-plain"></i>
+                    <small class="skill-name">Python</small>
+                </div>
+
+                <!-- NodeJS -->
+                <div class="skill-wrapper">
+                    <i class="skill-icon devicon-nodejs-plain"></i>
+                    <small class="skill-name">NodeJS</small>
+                </div>
+
+                <!-- ExpressJS -->
+                <div class="skill-wrapper">
+                    <i class="skill-icon devicon-express-original"></i>
+                    <small class="skill-name">ExpressJS</small>
+                </div>
+
+                <!-- Django -->
+                <div class="skill-wrapper">
+                    <i class="skill-icon devicon-django-plain"></i>
+                    <small class="skill-name">Django</small>
+                </div>
+
+                <!-- MongoDB -->
+                <div class="skill-wrapper">
+                    <i class="skill-icon devicon-mongodb-plain"></i>
+                    <small class="skill-name">MongoDB</small>
+                </div>
+                
+                <!-- PostgreSQL -->
+                <div class="skill-wrapper">
+                    <i class="skill-icon devicon-postgresql-plain"></i>
+                    <small class="skill-name">PostgreSQL</small>
+                </div>
             </div>
         </div>
     </section>
@@ -214,9 +245,9 @@
     <footer id="contact">
         <a id="resume" href="./resume.pdf" target="_blank">See Resume</a>
         <div class="link-container">
-            <a href="https://www.linkedin.com/in/quinlansparks/"><i class="devicon-linkedin-plain"></i></a>
+            <a href="https://www.linkedin.com/in/quinlansparks/" target="_blank"><i class="devicon-linkedin-plain"></i></a>
             <a href="mailto:q.m.sparks@gmail.com"><i class="fas fa-paper-plane"></i></a>
-            <a href="https://github.com/qmsparks"><i class="devicon-github-plain"></i></a>
+            <a href="https://github.com/qmsparks" target="_blank"><i class="devicon-github-plain"></i></a>
         </div>
         <small>Copyright © Quinlan Sparks 2020</small>
     </footer>

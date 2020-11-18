@@ -11,7 +11,7 @@ const toggleMenu = function() {
 $('.menu').on('click', toggleMenu);
 
 
-const flavorText = ["Battlebots enthusiast", "Gender connoisseur", "Probably not a hairless raccoon", "Loud", "Decepticon apologist", "Meme sommelier", "Podcast snob", "Non-GMO goblin-alternative", "Dog hugger"]
+const flavorText = ["Battlebots enthusiast", "Gender connoisseur", "Probably not a hairless raccoon", "Decepticon apologist", "Meme sommelier", "Podcast snob", "Non-GMO goblin-alternative", "Dog hugger"]
 
 const shuffleFlavorText = function() {
     if (flavorText.length === 0) {
@@ -28,3 +28,10 @@ const shuffleFlavorText = function() {
 shuffleFlavorText();
 
 $('.fa-sync-alt').on('click', shuffleFlavorText);
+
+
+$('.skill-wrapper').hover(function() {
+    $(this).children('.skill-icon').addClass('colored');
+}, function() {
+    $(this).children('.skill-icon').removeClass('colored');
+})
