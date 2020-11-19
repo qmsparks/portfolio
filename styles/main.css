@@ -4,11 +4,18 @@
 }
 
 /* ANCHOR general styling */
+/* body:before, body: after {
+    content: "",
+
+} */
 body {
+    position: relative;
     font-family: 'Montserrat', sans-serif;
     max-width: 100vw;
+    background-image: url('../images/mobile-background.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -47,6 +54,7 @@ a:hover {
 .info-block {
     position: relative;
     background-color: var(--light-green);
+    z-index: 1;
 }
 
 /* ANCHOR landing */
