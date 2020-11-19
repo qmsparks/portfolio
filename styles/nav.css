@@ -94,10 +94,6 @@
     opacity: 1;
 }
 
-a.clickable {
-    display: block;
-}
-
 .link-wrapper.show a:nth-child(1) {
     transform: rotate(-90deg) translate(-155%, -15%);
 }

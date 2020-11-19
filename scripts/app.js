@@ -2,7 +2,7 @@ const toggleMenu = function() {
     window.setTimeout(function() {
         $('.link-wrapper').toggleClass('show');
     }, 1);
-    $('.link-wrapper a').toggleClass('clickable');
+    $('.link-wrapper a').show();
     $('.menu-overlay').toggleClass('bloom');
     $('.half-circle').toggleClass('spin');
     $('.fa-bars').toggleClass('bar-spin');
@@ -11,12 +11,15 @@ const toggleMenu = function() {
 $('.menu').on('click', toggleMenu);
 
 
-const flavorText = ["Battlebots enthusiast", "Gender connoisseur", "Probably not a hairless raccoon", "Decepticon apologist", "Meme sommelier", "Podcast snob", "Non-GMO goblin-alternative", "Dog hugger"]
+const flavorTextBase = ["Battlebots enthusiast", "Gender connoisseur", "Probably not a hairless raccoon", "Decepticon apologist", "Meme sommelier", "Podcast snob", "Non-GMO goblin-alternative", "Dog hugger"]
+const flavorText = [...flavorTextBase];
 
 const shuffleFlavorText = function() {
     if (flavorText.length === 0) {
-        $('.fa-sync-alt').css("display", "none");
-        $('#rule-of-three').text('Out of flavor text for you');
+        flavorTextBase.map(el => {
+            flavorText.push(el);
+        })
+        $('#rule-of-three').text('Out of flavor text for you, but we can go again if you want');
     } else {
         const randomIndex = Math.floor(Math.random() * flavorText.length);
         const text = flavorText.splice(randomIndex, 1)[0];
@@ -25,9 +28,24 @@ const shuffleFlavorText = function() {
     }
 }
 
-shuffleFlavorText();
+$(document).ready(shuffleFlavorText);
 
 $('.fa-sync-alt').on('click', shuffleFlavorText);
+
+let offLanding = false;
+$(document).scroll(function() {
+    if ($(this).scrollTop() > 250) {
+        if (!offLanding) {
+            offLanding = true;
+            $('#to-top').slideDown();
+        }
+    } else {
+        if (offLanding) {
+            offLanding = false;
+            $('#to-top').slideUp();
+        }
+    }
+})
 
 
 $('.skill-wrapper').hover(function() {
