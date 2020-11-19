@@ -61,6 +61,7 @@
 
     #dev-pic {
         max-height: 10vh;
+        border: none;
     }
 
     #projects, #projectCarousel, .carousel-item {

@@ -99,6 +99,7 @@ a:hover {
 #dev-pic {
     border-radius: 50%;
     max-width: 20vw;
+    border: 10px double lightcyan;
 }
 
 
