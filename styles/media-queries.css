@@ -59,6 +59,10 @@
         margin-right: 0;
     }
 
+    #dev-pic {
+        max-height: 10vh;
+    }
+
     #projects, #projectCarousel, .carousel-item {
         height: 100vh;
     }
@@ -121,7 +125,6 @@
     }
 
     .link-container {
-        /* width: 80vw; */
         font-size: 1.5rem;
     }
 
