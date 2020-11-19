@@ -112,6 +112,11 @@ a:hover {
     position: relative;
 }
 
+.fa-chevron-left, .fa-chevron-right {
+    font-size: 2rem;
+    color: var(--dark-green);
+}
+
 .carousel-content {
     height: 75vh;
     display: flex;
