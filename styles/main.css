@@ -7,7 +7,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     max-width: 100vw;
-    background-color: var(--light-green);
+
 }
 
 h1, h3 {
@@ -25,23 +25,25 @@ ul {
 }
 
 a {
-    color: var(--light-green);
+    color: darkcyan;
 }
 
 a:hover {
-    color: darkcyan;
+    color: var(--dark-green);
+}
+
+.spacer {
+    height: 20vh;
 }
 
 .info-block {
     position: relative;
+    background-color: var(--light-green);
 }
 
 /* ANCHOR landing */
 #landing {
     height: 100vh;
-    background-image: url('../images/background.jpg');
-    background-size: cover;
-    color: var(--light-green);
     margin-bottom: 0;
 }
 
@@ -56,10 +58,11 @@ a:hover {
 .fa-sync-alt {
     margin: 0 5px;
     font-size: .9rem;
+    color: darkcyan;
 }
 
 .fa-sync-alt:hover {
-    color: darkcyan;
+    color: var(--dark-green);
 }
 
 /* ANCHOR about */
@@ -87,8 +90,6 @@ a:hover {
 /* ANCHOR projects */
 #projects {
     height: 75vh;
-    background-color: black;
-    color: var(--light-green);
 }
 
 #projectCarousel {
@@ -188,13 +189,12 @@ a:hover {
 
 /* ANCHOR contact */
 #contact {
+    color: var(--light-green);
     position: relative;
-    background-color: black;
     height: 20vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--light-green);
 }
 
 .contact-title {
