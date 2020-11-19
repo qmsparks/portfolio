@@ -223,20 +223,6 @@ a:hover {
 }
 
 #resume {
-    position: absolute;
-    font-size: 2rem;
-    left: 10vw;
-    top: 45vh;
-}
-
-/* ANCHOR copyright and image credit */
-.legal {
-    color: var(--light-green);
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    right: 2vw;
-    bottom: 1vh;
-    text-align: right;
-    z-index: 0;
+    padding-bottom: 15px;
+    font-weight: bold;
 }
