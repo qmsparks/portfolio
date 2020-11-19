@@ -1,5 +1,4 @@
 const toggleMenu = function() {
-
     window.setTimeout(function() {
         $('.link-wrapper').toggleClass('show');
     }, 1);
@@ -48,16 +47,16 @@ $(document).scroll(function() {
     }
 })
 
-$('.skill-wrapper').hover(function() {
-    $(this).children('.skill-icon').addClass('colored');
-}, function() {
-    $(this).children('.skill-icon').removeClass('colored');
-})
-
 $('.nav-link').on('click', function(e) {
     e.preventDefault();
     let target = $(this).attr('href');
     $('html, body').animate({
         scrollTop: ($(target).offset().top)
     }, 750);
+})
+
+$('.skill-wrapper').hover(function() {
+    $(this).children('.skill-icon').addClass('colored');
+}, function() {
+    $(this).children('.skill-icon').removeClass('colored');
 })
