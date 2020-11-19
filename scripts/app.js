@@ -1,11 +1,12 @@
 const toggleMenu = function() {
+
     window.setTimeout(function() {
         $('.link-wrapper').toggleClass('show');
     }, 1);
-    $('.link-wrapper a').show();
     $('.menu-overlay').toggleClass('bloom');
     $('.half-circle').toggleClass('spin');
     $('.fa-bars').toggleClass('bar-spin');
+    $('.nav-link').toggleClass('clickable');
 }
 
 $('.menu').on('click', toggleMenu);
@@ -47,9 +48,16 @@ $(document).scroll(function() {
     }
 })
 
-
 $('.skill-wrapper').hover(function() {
     $(this).children('.skill-icon').addClass('colored');
 }, function() {
     $(this).children('.skill-icon').removeClass('colored');
+})
+
+$('.nav-link').on('click', function(e) {
+    e.preventDefault();
+    let target = $(this).attr('href');
+    $('html, body').animate({
+        scrollTop: ($(target).offset().top)
+    }, 750);
 })

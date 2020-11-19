@@ -90,6 +90,10 @@
     transition: .5s linear;
 }
 
+.menu a.clickable {
+    display: block;
+}
+
 .link-wrapper.show a {
     opacity: 1;
 }
