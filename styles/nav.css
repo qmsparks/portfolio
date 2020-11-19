@@ -19,15 +19,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: darkcyan;
     border: 15px ridge var(--dark-green);
     z-index: 1;
     transform: rotate(90deg);
 }
 
 .fa-bars {
-    position: fixed;
-    color: var(--light-green);
     transform: rotate(90deg);
 }
 
