@@ -69,6 +69,12 @@ a:hover {
     color: var(--light-green);
 }
 
+#landing .container {
+    padding-left: 0;
+    padding-top: 20px;
+    margin-left: 10vw;
+}
+
 .name {
     margin-bottom: .1rem;
 }
